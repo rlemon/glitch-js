@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glitch JS Options</title>
+  <style>
+    body { padding: 10px; }
+    label { display: block; }
+    label span { padding-left: 14px; }
+  </style>
+</head>
+
+<body>
+  <label> Minimum timeout (in seconds)
+    <input id="min" type="range" min="0" max="3600000" value="0" />
+    <span id="min_value">0</span>
+  </label>
+
+  <label> Maximum timeout (in seconds)
+    <input id="max" type="range" min="0" max="3600000" value="600000" />
+    <span id="max_value">600000</span>
+  </label>
+
+  <div id="status"></div>
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
